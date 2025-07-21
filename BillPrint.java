@@ -36,7 +36,7 @@ class BillPrint {
 		System.out.println("=====================================================================================");
 		System.out.println();
 
-		Declare variables and initialized to store each grocery unit price;
+		// Declare variables and initialized to store each grocery unit price
 		double basmathi=250.0, dhal=180.0, sugar=150.0, highland=1200.0, yoghurt=50.0, flour=120.0, soap=160.0;
 		int b,d,s,h,y,f,so;
 
@@ -91,42 +91,92 @@ class BillPrint {
 		discountPrice = total - discount;
 
 		// Bill Table
-		System.out.println("+--------------------------------------------------------------+");
-		System.out.println("|              _   _   __           _____ _______    	       |");
-		System.out.println("|             (_) |  \\/  |    /\\   |  __ \\__   __|             |");
-		System.out.println("|              _  | \\  / |   /  \\  | |__) | | |		       |");
-		System.out.println("|             | | | |\\/| |  / /\\ \\ |  _  /  | |                |");
-		System.out.println("|             | | | |  | | / ____ \\| | \\ \\  | |		       |");
-		System.out.println("|             |_| |_|  |_|/_/    \\_\\ |  \\_\\ |_|	               |");
-		System.out.println("|                  225,Galle Road,Panadura                     |");
-		System.out.println("|                                                              |");
-		System.out.println("+--------------------------------------------------------------+");
-		System.out.printf("|                   # Tel  : %-34s|\n", customerPhoneNumber);
-		System.out.printf("|                   # Name : %-34s|\n", customerName);
-		System.out.println("+--------------------------------------------------------------+");
-		System.out.println("|                |    Qty   |   unit price   |      Price      |");
-		System.out.println("+----------------+---------------------------------------------+");
-		System.out.printf("| # Basmathi     |    %3d   |     %10.1f |     %6.1f      |\n", b, basmathi, basmathiTotal);
-		System.out.println("|                |          |                |                 |");
-		System.out.printf("| # Dhal         |    %3d   |     %10.1f |     %6.1f      |\n", d, dhal, dhalTotal);
-		System.out.println("|                |          |                |                 |");
-		System.out.printf("| # Sugar        |    %3d   |     %10.1f |     %6.1f      |\n", s, sugar, sugarTotal);
-		System.out.println("|                |          |                |                 |");
-		System.out.printf("| # Highland     |    %3d   |     %10.1f |     %6.1f      |\n", h, highland, highlandTotal);
-		System.out.println("|                |          |                |                 |");
-		System.out.printf("| # Yoghurt      |    %3d   |     %10.1f |     %6.1f      |\n", y, yoghurt, yoghurtTotal);
-		System.out.println("|                |          |                |                 |");
-		System.out.printf("| # flour        |    %3d   |     %10.1f |     %6.1f      |\n", f, flour, flourTotal);
-		System.out.println("|                |          |                |                 |");
-		System.out.printf("| # Soap         |    %3d   |     %10.1f |     %6.1f      |\n", so, soap, soapTotal);
-		System.out.println("|                |          |                |                 |");
-		System.out.println("+--------------------------------------------------------------+");
-		System.out.printf("|                           |  Total         |     %6.1f      |\n", total);
-		System.out.println("|                           +----------------+-----------------+");
-		System.out.printf("|                           |  discount(10%%) |     %6.1f      |\n", discount);
-		System.out.println("|                           +----------------+-----------------+");
-		System.out.printf("|                           |  Price         |     %6.1f      |\n", discountPrice);
-		System.out.println("+---------------------------+----------------+-----------------+");
+		System.out.println("+----------------------------------------------------------------+");
+		System.out.println("|               _   _   __           _____ _______    	         |");
+		System.out.println("|              (_) |  \\/  |    /\\   |  __ \\__   __|              |");
+		System.out.println("|               _  | \\  / |   /  \\  | |__) | | |		 |");
+		System.out.println("|              | | | |\\/| |  / /\\ \\ |  _  /  | |                 |");
+		System.out.println("|              | | | |  | | / ____ \\| | \\ \\  | |	 	 |");
+		System.out.println("|              |_| |_|  |_|/_/    \\_\\ |  \\_\\ |_|	         |");
+		System.out.println("|                   225,Galle Road,Panadura                      |");
+		System.out.println("|                                                                |");
+		System.out.println("+----------------------------------------------------------------+");
+		System.out.printf("|                   # Tel  : %-36s|\n", customerPhoneNumber);
+		System.out.printf("|                   # Name : %-36s|\n", customerName);
+		System.out.println("+----------------------------------------------------------------+");
+		System.out.println("|                |    Qty   |   unit price   |       Price       |");
+		System.out.println("+----------------+-----------------------------------------------+");
+		System.out.printf("| # Basmathi     |    %3d   |     %10.1f |     %8.1f      |\n", b, basmathi, basmathiTotal);
+		System.out.println("|                |          |                |                   |");
+		System.out.printf("| # Dhal         |    %3d   |     %10.1f |     %8.1f      |\n", d, dhal, dhalTotal);
+		System.out.println("|                |          |                |                   |");
+		System.out.printf("| # Sugar        |    %3d   |     %10.1f |     %8.1f      |\n", s, sugar, sugarTotal);
+		System.out.println("|                |          |                |                   |");
+		System.out.printf("| # Highland     |    %3d   |     %10.1f |     %8.1f      |\n", h, highland, highlandTotal);
+		System.out.println("|                |          |                |                   |");
+		System.out.printf("| # Yoghurt      |    %3d   |     %10.1f |     %8.1f      |\n", y, yoghurt, yoghurtTotal);
+		System.out.println("|                |          |                |                   |");
+		System.out.printf("| # flour        |    %3d   |     %10.1f |     %8.1f      |\n", f, flour, flourTotal);
+		System.out.println("|                |          |                |                   |");
+		System.out.printf("| # Soap         |    %3d   |     %10.1f |     %8.1f      |\n", so, soap, soapTotal);
+		System.out.println("|                |          |                |                   |");
+		System.out.println("+----------------------------------------------------------------+");
+		System.out.printf("|                           |  Total         |     %8.1f      |\n", total);
+		System.out.println("|                           +----------------+-------------------+");
+		System.out.printf("|                           |  discount(10%%) |     %8.1f      |\n", discount);
+		System.out.println("|                           +----------------+-------------------+");
+		System.out.printf("|                           |  Price         |     %8.1f      |\n", discountPrice);
+		System.out.println("+---------------------------+----------------+-------------------+");
+
+		// Customer given amount
+		System.out.println();
+		System.out.print("Enter customer given amount - ");
+		double customerAmount = scanner.nextDouble();
+		System.out.println();
+
+		double amountChange = customerAmount-discountPrice;
+		int customerChange = (int)amountChange;
+		
+
+		System.out.println("+----------------+--------------------+");
+		System.out.printf("|   Net Amount   |   %-17.1f|\n", discountPrice);
+		System.out.println("+----------------+--------------------+");
+		System.out.printf("|   Cash         |   %-17.1f|\n", customerAmount);
+		System.out.println("+----------------+--------------------+");
+		System.out.printf("|   Change       |   %-17d|\n", customerChange);
+		System.out.println("+----------------+--------------------+");
+
+		System.out.println();
+
+		System.out.println("+-----------------+-------------+");
+		System.out.println("|      Value      |      No     |");
+		System.out.println("+-----------------+-------------+");
+		System.out.println("|     Rs.5000     |         %13d|");
+		System.out.println("+-----------------+-------------+");
+		System.out.println("|     Rs.2000     |         %13d|");
+		System.out.println("+-----------------+-------------+");
+		System.out.println("|     Rs.1000     |         %13d|");
+		System.out.println("+-----------------+-------------+");
+		System.out.println("|     Rs.500      |         %13d|");
+		System.out.println("+-----------------+-------------+");
+		System.out.println("|     Rs.100      |         %13d|");
+		System.out.println("+-----------------+-------------+");
+		System.out.println("|     Rs.50       |         %13d|");
+		System.out.println("+-----------------+-------------+");
+		System.out.println("|     Rs.20       |         %13d|");
+		System.out.println("+-----------------+-------------+");
+		System.out.println("|     Rs.10       |         %13d|");
+		System.out.println("+-----------------+-------------+");
+		System.out.println("|     Rs.5        |         %13d|");
+		System.out.println("+-----------------+-------------+");
+		System.out.println("|     Rs.2        |         %13d|");
+		System.out.println("+-----------------+-------------+");
+		System.out.println("|     Rs.1        |         %13d|");
+		System.out.println("+-----------------+-------------+");
+		System.out.println("|   No of Notes   |         %13d|");
+		System.out.println("+-----------------+-------------+");
+		System.out.println("|   No of Coins   |         %13d|");
+		System.out.println("+-----------------+-------------+");
 
 		System.out.println();
 		System.out.println("=====================================================================================");
