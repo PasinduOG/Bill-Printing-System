@@ -148,34 +148,71 @@ class BillPrint {
 
 		System.out.println();
 
+		int value=5000, value1=2000, value2=1000, value3=500, value4=100, value5=50, value6=20, value7=10, value8=5, value9=2, value10=1;
+		
+		int note = customerChange/value;
+		int customerChange1 = customerChange%value;
+
+		int note1 = customerChange1/value1;
+		int customerChange2 = customerChange1%value1;
+
+		int note2 = customerChange2/value2;
+		int customerChange3 = customerChange2%value2;
+
+		int note3 = customerChange3/value3;
+		int customerChange4 = customerChange3%value3;
+
+		int note4 = customerChange4/value4;
+		int customerChange5 = customerChange4%value4;
+
+		int note5 = customerChange5/value5;
+		int customerChange6 = customerChange5%value5;
+
+		int note6 = customerChange6/value6;
+		int customerChange7 = customerChange6%value6;
+
+		int coin = customerChange7/value7;
+		int customerChange8 = customerChange7%value7;
+
+		int coin1 = customerChange8/value8;
+		int customerChange9 = customerChange8%value8;
+
+		int coin2 = customerChange9/value9;
+		int customerChange10 = customerChange9%value9;
+
+		int coin3 = customerChange10/value10;
+
+		int noteCount = note+note1+note2+note3+note4+note5+note6;
+		int coinCount = coin+coin1+coin2+coin3;		
+
 		System.out.println("+-----------------+-------------+");
-		System.out.println("|      Value      |      No     |");
+		System.out.println("|      Value      |     No      |");
 		System.out.println("+-----------------+-------------+");
-		System.out.println("|     Rs.5000     |         %13d|");
+		System.out.printf("|     Rs.5000     |      %-7d|\n", note);
 		System.out.println("+-----------------+-------------+");
-		System.out.println("|     Rs.2000     |         %13d|");
+		System.out.printf("|     Rs.2000     |      %-7d|\n", note1);
 		System.out.println("+-----------------+-------------+");
-		System.out.println("|     Rs.1000     |         %13d|");
+		System.out.printf("|     Rs.1000     |      %-7d|\n", note2);
 		System.out.println("+-----------------+-------------+");
-		System.out.println("|     Rs.500      |         %13d|");
+		System.out.printf("|     Rs.500      |      %-7d|\n", note3);
 		System.out.println("+-----------------+-------------+");
-		System.out.println("|     Rs.100      |         %13d|");
+		System.out.printf("|     Rs.100      |      %-7d|\n", note4);
 		System.out.println("+-----------------+-------------+");
-		System.out.println("|     Rs.50       |         %13d|");
+		System.out.printf("|     Rs.50       |      %-7d|\n", note5);
 		System.out.println("+-----------------+-------------+");
-		System.out.println("|     Rs.20       |         %13d|");
+		System.out.printf("|     Rs.20       |      %-7d|\n", note6);
 		System.out.println("+-----------------+-------------+");
-		System.out.println("|     Rs.10       |         %13d|");
+		System.out.printf("|     Rs.10       |      %-7d|\n", coin);
 		System.out.println("+-----------------+-------------+");
-		System.out.println("|     Rs.5        |         %13d|");
+		System.out.printf("|     Rs.5        |      %-7d|\n", coin1);
 		System.out.println("+-----------------+-------------+");
-		System.out.println("|     Rs.2        |         %13d|");
+		System.out.printf("|     Rs.2        |      %-7d|\n", coin2);
 		System.out.println("+-----------------+-------------+");
-		System.out.println("|     Rs.1        |         %13d|");
+		System.out.printf("|     Rs.1        |      %-7d|\n", coin3);
 		System.out.println("+-----------------+-------------+");
-		System.out.println("|   No of Notes   |         %13d|");
+		System.out.printf("|   No of Notes   |      %-7d|\n", noteCount);
 		System.out.println("+-----------------+-------------+");
-		System.out.println("|   No of Coins   |         %13d|");
+		System.out.printf("|   No of Coins   |      %-7d|\n", coinCount);
 		System.out.println("+-----------------+-------------+");
 
 		System.out.println();
