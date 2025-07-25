@@ -216,7 +216,10 @@ class BillPrint {
 		System.out.println("+-----------------+-------------+");
 
 		System.out.println();
-		System.out.println("=====================================================================================");
+		System.out.println();
+		System.out.println("------------------------------------------------------------------");
+		System.out.println("                  THANK YOU FOR SHOPPING WITH US                  ");
+		System.out.println("------------------------------------------------------------------");
 		System.out.println();
 	}
 
